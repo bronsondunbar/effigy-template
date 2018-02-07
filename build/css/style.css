@@ -10613,10 +10613,6 @@ section {
         padding: 15px;
         background: #ffffff;
         color: #333333; }
-    section:nth-of-type(3) h1 {
-      word-spacing: 100vw;
-      text-align: left !important;
-      padding: 0 0 0 60px; }
     section:nth-of-type(3) .btn-primary {
       background: #ffffff;
       border-color: #ffffff;
@@ -10625,22 +10621,6 @@ section {
         background: #999999;
         border-color: #999999;
         color: #333333 !important; }
-  section:nth-of-type(4) {
-    background: #ffffff; }
-    section:nth-of-type(4) h1, section:nth-of-type(4) h2, section:nth-of-type(4) h3, section:nth-of-type(4) h4, section:nth-of-type(4) p {
-      color: #333333; }
-      section:nth-of-type(4) h1 span, section:nth-of-type(4) h2 span, section:nth-of-type(4) h3 span, section:nth-of-type(4) h4 span, section:nth-of-type(4) p span {
-        padding: 15px;
-        background: #333333;
-        color: #ffffff; }
-    section:nth-of-type(4) .btn-primary {
-      background: #333333;
-      border-color: #333333;
-      color: #ffffff !important; }
-      section:nth-of-type(4) .btn-primary:hover, section:nth-of-type(4) .btn-primary:focus {
-        background: black;
-        border-color: black;
-        color: #ffffff !important; }
   section svg {
     width: 80%; }
 
@@ -10648,20 +10628,24 @@ section[role="default"] .grid {
   min-height: 100vh; }
   section[role="default"] .grid .item {
     position: relative; }
+    section[role="default"] .grid .item img {
+      z-index: 1020; }
     section[role="default"] .grid .item:nth-of-type(1) span:nth-of-type(1) {
       position: absolute;
       border: 1px solid #ffffff;
       width: 50%;
       height: 50%;
       top: 10%;
-      left: 10%; }
+      left: 10%;
+      z-index: 0; }
     section[role="default"] .grid .item:nth-of-type(1) span:nth-of-type(2) {
       position: absolute;
       border: 1px solid #ffffff;
       width: 50%;
       height: 50%;
       bottom: 10%;
-      right: 10%; }
+      right: 10%;
+      z-index: 0; }
 
 section[role="group"] {
   padding: 0; }

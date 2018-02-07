@@ -105,14 +105,6 @@ section {
 
 		}
 
-		h1 {
-
-			word-spacing: 100vw;
-			text-align: left !important;
-			padding: 0 0 0 60px;
-
-		}
-
 		.btn-primary {
 
 		  background: $white;
@@ -124,42 +116,6 @@ section {
 		  	background: darken($white, 40%);
 		  	border-color: darken($white, 40%);
 		  	color: $black !important;
-
-		  }
-
-		}
-
-	}
-
-	&:nth-of-type(4) {
-
-		background: $white;
-
-		h1, h2, h3, h4, p {
-
-			color: $black;
-
-			span {
-
-				padding: 15px;
-				background: $black;
-				color: $white;
-
-			}
-
-		}
-
-		.btn-primary {
-
-		  background: $black;
-		  border-color: $black;
-		  color: $white !important;
-
-		  &:hover, &:focus {
-
-		  	background: darken($black, 40%);
-		  	border-color: darken($black, 40%);
-		  	color: $white !important;
 
 		  }
 
@@ -185,6 +141,12 @@ section[role="default"] {
 
 			position: relative;
 
+			img {
+
+				z-index: 1020;
+
+			}
+
 			&:nth-of-type(1) {
 
 				span {
@@ -197,6 +159,7 @@ section[role="default"] {
 						height: 50%;
 						top: 10%;
 						left: 10%;
+						z-index: 0;
 
 					}
 
@@ -208,6 +171,7 @@ section[role="default"] {
 						height: 50%;
 						bottom: 10%;
 						right: 10%;
+						z-index: 0;
 
 					}
 
