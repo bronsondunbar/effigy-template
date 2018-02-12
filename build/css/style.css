@@ -10308,7 +10308,7 @@ body {
 
 .navbar a {
   font-family: "Lora", sans-serif;
-  font-weight: 500;
+  font-weight: "Lora", sans-serif;
   font-size: 1.5em; }
 
 /* Buttons */
@@ -10417,7 +10417,14 @@ body {
 .navbar {
   background: #333333; }
   .navbar a {
-    color: #ffffff; }
+    color: #ffffff;
+    padding: 0 5px;
+    margin: 0 5px; }
+    .navbar a span {
+      background: #ffffff;
+      color: #333333;
+      padding: 0 5px;
+      margin: 0 5px; }
   .navbar i {
     color: #ffffff;
     -webkit-transition: all 0.3s;
@@ -10618,7 +10625,8 @@ section[role="default"] {
       border-color: black;
       color: #ffffff !important; }
   section[role="default"] .grid {
-    min-height: 100vh; }
+    min-height: 100vh;
+    margin: 15px -15px 0 -15px; }
     section[role="default"] .grid .item {
       position: relative;
       margin: 0; }
