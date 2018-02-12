@@ -10320,12 +10320,12 @@ body {
   text-align: center; }
 
 .btn-primary {
-  background: #ffd100;
-  border-color: #ffd100;
-  color: #333333 !important; }
+  background: #333333;
+  border-color: #333333;
+  color: #ffffff !important; }
   .btn-primary:hover, .btn-primary:focus {
-    background: #332a00;
-    border-color: #332a00;
+    background: black;
+    border-color: black;
     color: #ffffff !important; }
 
 /* Dropdowns */
@@ -10630,6 +10630,8 @@ section[role="default"] {
     section[role="default"] .grid .item {
       position: relative;
       margin: 0; }
+      section[role="default"] .grid .item svg {
+        width: 50%; }
       section[role="default"] .grid .item img {
         z-index: 1020; }
       section[role="default"] .grid .item:nth-of-type(1) span:nth-of-type(1) {

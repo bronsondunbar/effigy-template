@@ -16,14 +16,14 @@
 
 .btn-primary {
 
-  background: $yellow;
-  border-color: $yellow;
-  color: $black !important;
+  background: $black;
+  border-color: $black;
+  color: $white !important;
 
   &:hover, &:focus {
 
-  	background: darken($yellow, 40%);
-  	border-color: darken($yellow, 40%);
+  	background: darken($black, 40%);
+  	border-color: darken($black, 40%);
   	color: $white !important;
 
   }
