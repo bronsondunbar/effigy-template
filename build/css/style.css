@@ -10541,8 +10541,10 @@ section[role="default"] {
         height: 50%;
         width: 50%;
         margin: 15%;
-        padding: 30px 0; }
+        padding: 30px; }
         section[role="default"] .grid .item .media svg, section[role="default"] .grid .item .media img {
+          display: block;
+          margin: 0 auto;
           max-width: 100%; }
 
 /* Grid */
