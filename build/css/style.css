@@ -10448,32 +10448,32 @@ body {
     margin: 0; }
 
 .nav-content {
-  background-color: #e22d5d !important;
+  background-color: #333333 !important;
   padding: 15px 0;
-  position: fixed;
-  top: -132px;
+  position: absolute;
+  top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  bottom: 0;
+  z-index: 1031;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .nav-content h1, .nav-content h2, .nav-content h3, .nav-content h4, .nav-content p {
     text-align: center;
     color: #ffffff; }
-  .nav-content .container .row .col {
-    text-align: center;
-    color: #ffffff; }
-    .nav-content .container .row .col i {
-      display: block;
-      text-align: center;
-      padding: 15px; }
-
-.nav-content.open {
-  top: 54px; }
-
-.navbar-title {
-  text-transform: capitalize;
-  margin: 40px 0 20px 0; }
+  .nav-content .container {
+    position: relative; }
+    .nav-content .container .nav-content-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1031;
+      color: #ffffff; }
+    .nav-content .container .grid .item {
+      text-align: left; }
+      .nav-content .container .grid .item ul {
+        font-size: 2em;
+        color: #ffffff; }
 
 /* Search */
 .search {

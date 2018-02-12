@@ -155,14 +155,15 @@
 
 .nav-content {
 
-  background-color: rgba($pink, 1) !important;
+  background-color: rgba($black, 1) !important;
   padding: 15px 0;
-  position: fixed;
-  top: -132px;
+  position: absolute;
+  top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
-  transition: all 0.5s;
+  bottom: 0;
+  z-index: 1031;
+  transition: $fastTransition;
 
   h1, h2, h3, h4, p {
 
@@ -173,18 +174,28 @@
 
   .container {
 
-    .row {
+    position: relative;
 
-      .col {
+    .nav-content-close {
 
-        text-align: center;
-        color: $white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1031;
+      color: $white;
 
-        i {
+    }
 
-          display: block;
-          text-align: center;
-          padding: 15px;
+    .grid {
+
+      .item {
+
+        text-align: left;
+
+        ul {
+
+          font-size: 2em;
+          color: $white;
 
         }
 
@@ -196,15 +207,3 @@
 
 }
 
-.nav-content.open {
-
-  top: 54px;
-
-}
-
-.navbar-title {
-
-  text-transform: capitalize;
-  margin: 40px 0 20px 0;
-
-}
