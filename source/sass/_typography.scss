@@ -26,3 +26,15 @@ body {
 	font-size: $bodyFontSize;
 
 }
+
+.navbar {
+
+  	a {
+
+    	font-family: $titleFontFamily;
+		font-weight: $titleFontWeight;
+		font-size: $navbarFontSize;
+
+  	}
+
+}

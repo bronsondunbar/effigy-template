@@ -10306,6 +10306,11 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 0.9rem; }
 
+.navbar a {
+  font-family: "Lora", sans-serif;
+  font-weight: 500;
+  font-size: 1.5em; }
+
 /* Buttons */
 .btn {
   margin: 15px 0;
@@ -10411,6 +10416,8 @@ body {
 
 .navbar {
   background: #333333; }
+  .navbar a {
+    color: #ffffff; }
   .navbar i {
     color: #ffffff;
     -webkit-transition: all 0.3s;
@@ -10568,84 +10575,73 @@ body {
 section {
   position: relative;
   padding: 30px 0; }
-  section:nth-of-type(1) {
-    background: #333333; }
-    section:nth-of-type(1) h1, section:nth-of-type(1) h2, section:nth-of-type(1) h3, section:nth-of-type(1) h4, section:nth-of-type(1) p {
-      color: #ffffff; }
-      section:nth-of-type(1) h1 span, section:nth-of-type(1) h2 span, section:nth-of-type(1) h3 span, section:nth-of-type(1) h4 span, section:nth-of-type(1) p span {
-        padding: 5px 15px;
-        background: #ffffff;
-        color: #333333;
-        vertical-align: middle; }
-    section:nth-of-type(1) h1 {
-      word-spacing: 100vw;
-      text-align: left !important;
-      padding: 0 0 0 60px; }
-    section:nth-of-type(1) .btn-primary {
-      background: #ffffff;
-      border-color: #ffffff;
-      color: #333333 !important; }
-      section:nth-of-type(1) .btn-primary:hover, section:nth-of-type(1) .btn-primary:focus {
-        background: #999999;
-        border-color: #999999;
-        color: #333333 !important; }
   section:nth-of-type(2) {
-    background: #ffffff; }
-    section:nth-of-type(2) h1, section:nth-of-type(2) h2, section:nth-of-type(2) h3, section:nth-of-type(2) h4, section:nth-of-type(2) p {
-      color: #333333; }
-      section:nth-of-type(2) h1 span, section:nth-of-type(2) h2 span, section:nth-of-type(2) h3 span, section:nth-of-type(2) h4 span, section:nth-of-type(2) p span {
-        padding: 15px;
-        background: #333333;
-        color: #ffffff; }
-    section:nth-of-type(2) .btn-primary {
-      background: #333333;
-      border-color: #333333;
-      color: #ffffff !important; }
-      section:nth-of-type(2) .btn-primary:hover, section:nth-of-type(2) .btn-primary:focus {
-        background: black;
-        border-color: black;
-        color: #ffffff !important; }
-  section:nth-of-type(3) {
     background: #333333; }
-    section:nth-of-type(3) h1, section:nth-of-type(3) h2, section:nth-of-type(3) h3, section:nth-of-type(3) h4, section:nth-of-type(3) p {
+    section:nth-of-type(2) h1, section:nth-of-type(2) h2, section:nth-of-type(2) h3, section:nth-of-type(2) h4, section:nth-of-type(2) p {
       color: #ffffff; }
-      section:nth-of-type(3) h1 span, section:nth-of-type(3) h2 span, section:nth-of-type(3) h3 span, section:nth-of-type(3) h4 span, section:nth-of-type(3) p span {
+      section:nth-of-type(2) h1 span, section:nth-of-type(2) h2 span, section:nth-of-type(2) h3 span, section:nth-of-type(2) h4 span, section:nth-of-type(2) p span {
         padding: 15px;
         background: #ffffff;
         color: #333333; }
-    section:nth-of-type(3) .btn-primary {
+    section:nth-of-type(2) .btn-primary {
       background: #ffffff;
       border-color: #ffffff;
       color: #333333 !important; }
-      section:nth-of-type(3) .btn-primary:hover, section:nth-of-type(3) .btn-primary:focus {
+      section:nth-of-type(2) .btn-primary:hover, section:nth-of-type(2) .btn-primary:focus {
         background: #999999;
         border-color: #999999;
         color: #333333 !important; }
   section svg {
     width: 80%; }
 
-section[role="default"] .grid {
-  min-height: 100vh; }
-  section[role="default"] .grid .item {
-    position: relative; }
-    section[role="default"] .grid .item img {
-      z-index: 1020; }
-    section[role="default"] .grid .item:nth-of-type(1) span:nth-of-type(1) {
-      position: absolute;
-      border: 1px solid #ffffff;
-      width: 50%;
-      height: 50%;
-      top: 10%;
-      left: 10%;
-      z-index: 0; }
-    section[role="default"] .grid .item:nth-of-type(1) span:nth-of-type(2) {
-      position: absolute;
-      border: 1px solid #ffffff;
-      width: 50%;
-      height: 50%;
-      bottom: 10%;
-      right: 10%;
-      z-index: 0; }
+section[role="default"] {
+  padding: 0;
+  margin: 0;
+  background: #333333; }
+  section[role="default"] h1, section[role="default"] h2, section[role="default"] h3, section[role="default"] h4, section[role="default"] p {
+    color: #333333; }
+    section[role="default"] h1 span, section[role="default"] h2 span, section[role="default"] h3 span, section[role="default"] h4 span, section[role="default"] p span {
+      padding: 5px 15px;
+      background: #333333;
+      color: #ffffff;
+      vertical-align: middle; }
+  section[role="default"] h1 {
+    word-spacing: 100vw;
+    text-align: left !important;
+    padding: 0 0 0 60px; }
+  section[role="default"] .btn-primary {
+    background: #333333;
+    border-color: #333333;
+    color: #ffffff !important; }
+    section[role="default"] .btn-primary:hover, section[role="default"] .btn-primary:focus {
+      background: black;
+      border-color: black;
+      color: #ffffff !important; }
+  section[role="default"] .grid {
+    min-height: 100vh; }
+    section[role="default"] .grid .item {
+      position: relative;
+      margin: 0; }
+      section[role="default"] .grid .item img {
+        z-index: 1020; }
+      section[role="default"] .grid .item:nth-of-type(1) span:nth-of-type(1) {
+        position: absolute;
+        border: 1px solid #ffffff;
+        width: 50%;
+        height: 50%;
+        top: 10%;
+        left: 10%;
+        z-index: 0; }
+      section[role="default"] .grid .item:nth-of-type(1) span:nth-of-type(2) {
+        position: absolute;
+        border: 1px solid #ffffff;
+        width: 50%;
+        height: 50%;
+        bottom: 10%;
+        right: 10%;
+        z-index: 0; }
+      section[role="default"] .grid .item:nth-of-type(2) {
+        background: #ffffff; }
 
 section[role="group"] {
   padding: 0; }

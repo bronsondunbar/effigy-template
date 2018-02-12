@@ -6,88 +6,7 @@ section {
 	position: relative;
 	padding: 30px 0;
 
-	&:nth-of-type(1) {
-
-		background: $black;
-
-		h1, h2, h3, h4, p {
-
-			color: $white;
-
-			span {
-
-				padding: 5px 15px;
-				background: $white;
-				color: $black;
-				vertical-align: middle;
-
-			}
-
-		}
-
-		h1 {
-
-			word-spacing: 100vw;
-			text-align: left !important;
-			padding: 0 0 0 60px;
-
-		}
-
-		.btn-primary {
-
-		  background: $white;
-		  border-color: $white;
-		  color: $black !important;
-
-		  &:hover, &:focus {
-
-		  	background: darken($white, 40%);
-		  	border-color: darken($white, 40%);
-		  	color: $black !important;
-
-		  }
-
-		}
-
-	}
-
 	&:nth-of-type(2) {
-
-		background: $white;
-
-		h1, h2, h3, h4, p {
-
-			color: $black;
-
-			span {
-
-				padding: 15px;
-				background: $black;
-				color: $white;
-
-			}
-
-		}
-
-		.btn-primary {
-
-		  background: $black;
-		  border-color: $black;
-		  color: $white !important;
-
-		  &:hover, &:focus {
-
-		  	background: darken($black, 40%);
-		  	border-color: darken($black, 40%);
-		  	color: $white !important;
-
-		  }
-
-		}
-
-	}
-
-	&:nth-of-type(3) {
 
 		background: $black;
 
@@ -133,6 +52,49 @@ section {
 
 section[role="default"] {
 
+	padding: 0;
+	margin: 0;
+	background: $black;
+
+	h1, h2, h3, h4, p {
+
+		color: $black;
+
+		span {
+
+			padding: 5px 15px;
+			background: $black;
+			color: $white;
+			vertical-align: middle;
+
+		}
+
+	}
+
+	h1 {
+
+		word-spacing: 100vw;
+		text-align: left !important;
+		padding: 0 0 0 60px;
+
+	}
+
+	.btn-primary {
+
+	  background: $black;
+	  border-color: $black;
+	  color: $white !important;
+
+	  &:hover, &:focus {
+
+	  	background: darken($black, 40%);
+	  	border-color: darken($black, 40%);
+	  	color: $white !important;
+
+	  }
+
+	}
+
 	.grid {
 
 		min-height: 100vh;
@@ -140,6 +102,7 @@ section[role="default"] {
 		.item {
 
 			position: relative;
+			margin: 0;
 
 			img {
 
@@ -176,6 +139,12 @@ section[role="default"] {
 					}
 
 				}
+
+			}
+
+			&:nth-of-type(2) {
+
+				background: $white;
 
 			}
 
