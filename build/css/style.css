@@ -10545,7 +10545,7 @@ section[role="default"] {
         section[role="default"] .grid .item .media svg, section[role="default"] .grid .item .media img {
           display: block;
           margin: 0 auto;
-          max-width: 100%; }
+          width: 50%; }
 
 /* Grid */
 .grid {
