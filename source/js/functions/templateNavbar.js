@@ -3,12 +3,17 @@
 
 $(document).ready(function(){
 
-  $(".navbar-toggler").click(function (){
+  $(".navbar-toggler").click(function () {
 
-    // $(this).toggleClass("open");
-    // $(".nav-content").toggleClass("open");
+  	$(".nav-content").toggleClass("open");
 
-    
+  });
+
+  $(".navbar-toggler-close").click(function (event) {
+
+  	event.preventDefault();
+
+  	$(".nav-content").toggleClass("open");
 
   });
 
