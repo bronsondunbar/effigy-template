@@ -179,9 +179,10 @@
     .nav-toggler-close {
 
       position: absolute;
+      display: block;
       top: 0;
       right: 0;
-      z-index: 1031;
+      // z-index: 1031;
       color: $white;
 
     }

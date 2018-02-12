@@ -1,20 +1,14 @@
 
 /* Template navbar */
 
-$(document).ready(function(){
+$(document).on("click", ".navbar-toggler", function (event) {
 
-  $(".navbar-toggler").click(function () {
+	$(".nav-content").toggleClass("open");
 
-  	$(".nav-content").toggleClass("open");
+});
 
-  });
+$(document).on("click", ".navbar-toggler-close > i", function (event) {
 
-  $(".navbar-toggler-close").click(function (event) {
-
-  	event.preventDefault();
-
-  	$(".nav-content").toggleClass("open");
-
-  });
+	console.log("Hello");
 
 });

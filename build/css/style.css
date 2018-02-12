@@ -10465,9 +10465,9 @@ body {
     position: relative; }
     .nav-content .container .nav-toggler-close {
       position: absolute;
+      display: block;
       top: 0;
       right: 0;
-      z-index: 1031;
       color: #ffffff; }
     .nav-content .container .grid .item {
       text-align: left; }
