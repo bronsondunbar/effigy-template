@@ -54,7 +54,6 @@ section[role="default"] {
 
 	padding: 0;
 	margin: 0;
-	background: $black;
 
 	h1, h2, h3, h4, p {
 
@@ -105,18 +104,6 @@ section[role="default"] {
 			position: relative;
 			margin: 0;
 
-			svg {
-
-				width: 50%;
-
-			}
-
-			img {
-
-				z-index: 1020;
-
-			}
-
 			&:nth-of-type(1) {
 
 				span {
@@ -155,303 +142,23 @@ section[role="default"] {
 
 			}
 
-		}
-
-	}
-
-}
-
-section[role="group"] {
-
-	padding: 0;
-
-	.grid {
-
-		margin: 0;
-
-		.item {
-
-			position: relative;
-			margin: 0;
-			padding: 60px 30px;
-			cursor: pointer;
-			transition: $fastTransition;
-
-			&:nth-of-type(1) {
-
-				background: $yellow;
-
-			}
-
-			&:nth-of-type(2) {
-
-				background: $pink;
-
-			}
-
-			&:nth-of-type(3) {
-
-				background: $peach;
-
-			}
-
-			&:hover, &:focus {
-
-				background: $white;
-
-			}
-
-		}
-
-		.item.active {
-
-			background: $white;
-
-			&:after {
-
-		    content:'';
-		    position: absolute;
-		    bottom: 0;
-		    left: 50%;
-		    margin-left: -30px;
-		    width: 0;
-		    height: 0;
-		    border-bottom: solid 30px $black;
-				border-left: solid 30px transparent;
-				border-right: solid 30px transparent;
-
-			}
-
-		}
-
-		+ #groupDetails {
-
-			.grid {
+			.media {
 
 				background: $black;
-				color: $white;
-				display: none;
-				transition: $fastTransition;
+				display: flex;
+				justify-content: center;
+    			align-items: center;
+    			flex-wrap: wrap;
+				height: auto;
+				width: 100%;
+				margin: 15%;
+				padding: 30px;
 
-				.item {
+				svg, img {
 
-					background: none;
-					color: $white;
-					cursor: default;
-
-					h1, h2, h3, h4 {
-
-						color: $white !important;
-
-					}
-
-					+ .grid {
-
-						.item {
-
-							h1, h2, h3, h4 {
-
-								color: $white !important;
-
-							}
-
-						}
-
-					}
-
-					.grid {
-
-						display: flex;
-
-						.item {
-
-							.card {
-
-								background: $white;
-
-								h1, h2, h3, h4, h5 {
-
-									color: $black;
-
-								}
-
-							}
-
-							.card.highlight {
-
-								h1, h2, h3, h4, h5 {
-
-									color: $black !important;
-
-								}
-
-								p {
-
-									color: $black !important;
-
-								}
-
-							}
-
-						}
-
-					}
-
-					&:hover, &:focus {
-
-						background: none;
-
-					}
+					width: 50%;
 
 				}
-
-			}
-
-			.grid.active {
-
-				display: block;
-
-			}
-
-		}
-
-		
-
-	}
-
-}
-
-section[role="sponsors"] {
-
-	background: $blue;
-
-	h1, h2, h3, h4, p, i {
-
-		color: $white !important;
-
-	}
-
-	ul {
-
-		list-style-type: none;
-		text-align: center;
-
-		li {
-
-			display: inline-block;
-			margin: 0 15px 0 0;
-
-			&:last-child {
-
-				margin: 0;
-
-			}
-
-		}
-
-	}
-
-}
-
-section[role="page"] {
-
-	height: 40vh;
-	padding: 5%;
-	overflow: hidden;
-	border-bottom: 20px solid $black;
-
-	svg {
-
-		width: 100%;
-
-	}
-
-	+ section {
-
-		background: $white;
-
-		h1, h2, h3, h4, h5 {
-
-			text-align: center;
-
-		}
-
-		.icon {
-
-			background: $white;
-			padding: 30px;
-			position: absolute;
-			top: -80px;
-			left: 43%;
-
-			i {
-
-				font-size: 10em;
-
-			}
-
-		}
-
-		.container {
-
-			padding: 9% 0 0 0;
-
-		}
-
-		.grid {
-
-			.item {
-
-				i {
-
-					font-size: 4em;
-
-				}
-
-			}
-
-		}
-
-		.card {
-
-			background: $lightGray;
-
-			.btn-primary {
-
-				background: $blue;
-	  		border-color: $blue;
-	  		color: $white !important;
-
-	  		&:hover, &:focus {
-
-		  		background: darken($blue, 40%);
-		  		border-color: darken($blue, 40%);
-		  		color: $white !important;
-
-		  	}
-
-			}
-
-		}
-
-		.card.highlight {
-
-			background: $blue;
-			border: 1px solid $blue;
-
-			.btn-primary {
-
-				background: $black;
-	  		border-color: $black;
-	  		color: $white !important;
-
-	  		&:hover, &:focus {
-
-		  		background: darken($black, 40%);
-		  		border-color: darken($black, 40%);
-		  		color: $white !important;
-
-		  	}
 
 			}
 
