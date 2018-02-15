@@ -42,6 +42,49 @@ section {
 
 	}
 
+	&:nth-of-type(5) {
+
+		background: $black;
+
+		h1, h2, h3, h4, p, label {
+
+			color: $white;
+
+			span {
+
+				padding: 15px;
+				background: $white;
+				color: $black;
+
+			}
+
+		}
+
+		input[type="text"], input[type="email"], textarea {
+
+			color: $white;
+			border: 1px solid $white;
+
+		}
+
+		.btn-primary {
+
+		  background: $white;
+		  border-color: $white;
+		  color: $black !important;
+
+		  &:hover, &:focus {
+
+		  	background: darken($white, 40%);
+		  	border-color: darken($white, 40%);
+		  	color: $black !important;
+
+		  }
+
+		}
+
+	}
+
 	svg {
 
 		width: 80%;
@@ -75,6 +118,7 @@ section[role="default"] {
 		word-spacing: 100vw;
 		text-align: left !important;
 		padding: 0 0 0 60px;
+		font-size: 5em;
 
 	}
 

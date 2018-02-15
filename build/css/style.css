@@ -10300,9 +10300,6 @@ h1, h2, h3, h4 {
     h1, h2, h3, h4 {
       text-align: center; } }
 
-h1 {
-  font-size: 5em; }
-
 body {
   font-family: "Arial", sans-serif;
   font-size: 0.9rem; }
@@ -10359,7 +10356,8 @@ body {
         color: #333333; }
   .navbar .navbar-toggler {
     display: block;
-    margin: 5px 0 0 15px; }
+    margin: 5px 0 0 15px;
+    border: none; }
   .navbar .btn {
     margin: 0; }
 
@@ -10476,6 +10474,25 @@ section {
         background: #999999;
         border-color: #999999;
         color: #333333 !important; }
+  section:nth-of-type(5) {
+    background: #333333; }
+    section:nth-of-type(5) h1, section:nth-of-type(5) h2, section:nth-of-type(5) h3, section:nth-of-type(5) h4, section:nth-of-type(5) p, section:nth-of-type(5) label {
+      color: #ffffff; }
+      section:nth-of-type(5) h1 span, section:nth-of-type(5) h2 span, section:nth-of-type(5) h3 span, section:nth-of-type(5) h4 span, section:nth-of-type(5) p span, section:nth-of-type(5) label span {
+        padding: 15px;
+        background: #ffffff;
+        color: #333333; }
+    section:nth-of-type(5) input[type="text"], section:nth-of-type(5) input[type="email"], section:nth-of-type(5) textarea {
+      color: #ffffff;
+      border: 1px solid #ffffff; }
+    section:nth-of-type(5) .btn-primary {
+      background: #ffffff;
+      border-color: #ffffff;
+      color: #333333 !important; }
+      section:nth-of-type(5) .btn-primary:hover, section:nth-of-type(5) .btn-primary:focus {
+        background: #999999;
+        border-color: #999999;
+        color: #333333 !important; }
   section svg {
     width: 80%; }
 
@@ -10492,7 +10509,8 @@ section[role="default"] {
   section[role="default"] h1 {
     word-spacing: 100vw;
     text-align: left !important;
-    padding: 0 0 0 60px; }
+    padding: 0 0 0 60px;
+    font-size: 5em; }
   section[role="default"] .btn-primary {
     background: #333333;
     border-color: #333333;
@@ -10641,8 +10659,8 @@ section[role="default"] {
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
       .gallery .highlight img:hover, .gallery .highlight img:focus {
-        -webkit-filter: grayscale(100%);
-                filter: grayscale(100%); }
+        -webkit-filter: invert(100%);
+                filter: invert(100%); }
     @media screen and (max-width: 425px) {
       .gallery .highlight {
         grid-column: span 3; } }
@@ -10692,8 +10710,8 @@ section[role="default"] {
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
       .gallery .content img:hover, .gallery .content img:focus {
-        -webkit-filter: grayscale(100%);
-                filter: grayscale(100%); }
+        -webkit-filter: invert(100%);
+                filter: invert(100%); }
     @media screen and (max-width: 425px) {
       .gallery .content {
         grid-column: span 3; } }
@@ -10727,7 +10745,7 @@ section[role="default"] {
     .gallery .both:last-child {
       grid-column: span 3; }
     .gallery .both .item {
-      background: #ededed;
+      background: #333333;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -10739,7 +10757,7 @@ section[role="default"] {
               align-items: center;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      border: 1px solid #ededed;
+      border: 1px solid #333333;
       height: 48%;
       width: 100%;
       overflow: hidden;
@@ -10769,8 +10787,8 @@ section[role="default"] {
         -webkit-transition: all 0.3s;
         transition: all 0.3s; }
         .gallery .both .item img:hover, .gallery .both .item img:focus {
-          -webkit-filter: grayscale(100%);
-                  filter: grayscale(100%); }
+          -webkit-filter: invert(100%);
+                  filter: invert(100%); }
       @media screen and (max-width: 736px) {
         .gallery .both .item {
           height: 100%; } }
@@ -10918,7 +10936,7 @@ footer {
   position: static;
   text-align: center;
   color: #333333;
-  padding: 15px 0 15px 0; }
+  padding: 30px 0 15px 0; }
   footer .container p {
     text-align: center;
     margin: 0; }

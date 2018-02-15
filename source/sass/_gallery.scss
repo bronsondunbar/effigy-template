@@ -72,7 +72,7 @@
 
 			&:hover, &:focus {
 
-				filter: grayscale(100%);
+				filter: invert(100%);
 
 			}
 
@@ -152,7 +152,7 @@
 
 			&:hover, &:focus {
 
-				filter: grayscale(100%);
+				filter: invert(100%);
 
 			}
 
@@ -207,12 +207,12 @@
 
 		.item {
 
-			background: $lightGray;
+			background: $black;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
-			border: 1px solid $lightGray;
+			border: 1px solid $black;
 			height: 48%;
 			width: 100%;
 			overflow: hidden;
@@ -266,7 +266,7 @@
 
 				&:hover, &:focus {
 
-					filter: grayscale(100%);
+					filter: invert(100%);
 
 				}
 
